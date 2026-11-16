@@ -1,0 +1,100 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Length 7177 >>
+stream
+0.035 0.051 0.106 rg 0 676 612 116 re f
+0.216 0.384 0.784 rg 0 673 612 3 re f
+BT /F2 20 Tf 0.925 0.937 0.973 rg 1 0 0 1 42 750 Tm (JUAN MANUEL ACEVEDO SALAZAR) Tj ET
+BT /F1 10.5 Tf 0.529 0.631 0.871 rg 1 0 0 1 42 730 Tm (Desarrollador Web Full Stack en formación  |  Tecnólogo en Producción de Multimedia \(SENA\)) Tj ET
+BT /F1 9.2 Tf 0.851 0.871 0.949 rg 1 0 0 1 42 709 Tm (Medellín, Colombia \(Presencial / Remoto\)   •   Tel: +57 301 218 0621   •   jacevedosalazar@gmail.com) Tj ET
+BT /F1 9.2 Tf 0.702 0.745 0.898 rg 1 0 0 1 42 693 Tm (GitHub: github.com/Hinalador   •   LinkedIn: linkedin.com/in/manuelsalaz7   •   Inglés: Nivel B1) Tj ET
+BT /F2 10.5 Tf 0.173 0.310 0.627 rg 1 0 0 1 42 642 Tm (PERFIL PROFESIONAL) Tj ET
+0.851 0.871 0.949 RG 0.8 w 42 637 m 570 637 l S
+BT /F1 9.4 Tf 0.137 0.169 0.263 rg 1 0 0 1 42 624 Tm (Tecnólogo en Producción de Multimedia graduado del SENA y estudiante de Desarrollo de Software en Riwi. Combino) Tj ET
+BT /F1 9.4 Tf 0.137 0.169 0.263 rg 1 0 0 1 42 611 Tm (formación en diseño visual digital con desarrollo web moderno \(JavaScript, TypeScript, React, Svelte, Tailwind) Tj ET
+BT /F1 9.4 Tf 0.137 0.169 0.263 rg 1 0 0 1 42 598 Tm (CSS\) y automatización de pruebas End-to-End con Playwright y CI/CD en GitHub Actions. Alta adaptabilidad,) Tj ET
+BT /F1 9.4 Tf 0.137 0.169 0.263 rg 1 0 0 1 42 585 Tm (aprendizaje continuo y orientación al trabajo en equipo.) Tj ET
+BT /F2 10.5 Tf 0.173 0.310 0.627 rg 1 0 0 1 42 562 Tm (HABILIDADES TÉCNICAS Y MULTIMEDIA) Tj ET
+0.851 0.871 0.949 RG 0.8 w 42 557 m 570 557 l S
+BT /F2 9.2 Tf 0.051 0.071 0.149 rg 1 0 0 1 42 544 Tm (Frontend & Web:) Tj ET
+BT /F1 8.8 Tf 0.204 0.255 0.396 rg 1 0 0 1 154 544 Tm (HTML5, CSS3, JavaScript \(ES6+\), TypeScript, React, Svelte, Tailwind CSS, Bootstrap 5, Vite) Tj ET
+BT /F2 9.2 Tf 0.051 0.071 0.149 rg 1 0 0 1 42 530 Tm (QA & Herramientas:) Tj ET
+BT /F1 8.8 Tf 0.204 0.255 0.396 rg 1 0 0 1 154 530 Tm (Playwright \(E2E, POM, Fixtures\), Git, GitHub, GitHub Actions \(CI/CD\), Node.js, Python, ESLint) Tj ET
+BT /F2 9.2 Tf 0.051 0.071 0.149 rg 1 0 0 1 42 516 Tm (Diseño Multimedia:) Tj ET
+BT /F1 8.8 Tf 0.204 0.255 0.396 rg 1 0 0 1 154 516 Tm (Adobe Illustrator, Adobe Photoshop, Adobe XD, Adobe Premiere, Diseño Responsive, UI) Tj ET
+BT /F2 10.5 Tf 0.173 0.310 0.627 rg 1 0 0 1 42 498 Tm (PROYECTOS DESTACADOS) Tj ET
+0.851 0.871 0.949 RG 0.8 w 42 493 m 570 493 l S
+BT /F2 9.6 Tf 0.051 0.071 0.149 rg 1 0 0 1 42 480 Tm (Akira Motors  |  React, TypeScript, Tailwind CSS, GSAP) Tj ET
+BT /F1 8.5 Tf 0.271 0.341 0.529 rg 1 0 0 1 426.45000000000005 480 Tm (github.com/Hinalador/akira-motors) Tj ET
+BT /F1 9 Tf 0.204 0.255 0.396 rg 1 0 0 1 42 467.5 Tm (Catálogo interactivo de motocicletas con animaciones GSAP/Motion, calculadora de rutas con Google Maps y sonidos de) Tj ET
+BT /F1 9 Tf 0.204 0.255 0.396 rg 1 0 0 1 42 455.5 Tm (motor. Publicado en GitHub Pages.) Tj ET
+BT /F2 9.6 Tf 0.051 0.071 0.149 rg 1 0 0 1 42 440.5 Tm (Playwright E2E Master Suite  |  Playwright, JavaScript, GitHub Actions) Tj ET
+BT /F1 8.5 Tf 0.271 0.341 0.529 rg 1 0 0 1 396 440.5 Tm (github.com/Hinalador/Playwright-Practice) Tj ET
+BT /F1 9 Tf 0.204 0.255 0.396 rg 1 0 0 1 42 428 Tm (Suite automatizada E2E con Page Object Model \(POM\), Custom Fixtures, 28 casos en Chromium, Firefox y WebKit,) Tj ET
+BT /F1 9 Tf 0.204 0.255 0.396 rg 1 0 0 1 42 416 Tm (autenticación multiusuario e intercepción de red.) Tj ET
+BT /F2 9.6 Tf 0.051 0.071 0.149 rg 1 0 0 1 42 401 Tm (Desastres Naturales  |  Tailwind CSS, Vite, JavaScript, Leaflet) Tj ET
+BT /F1 8.5 Tf 0.271 0.341 0.529 rg 1 0 0 1 443.85 401 Tm (hinalador.github.io/desastres) Tj ET
+BT /F1 9 Tf 0.204 0.255 0.396 rg 1 0 0 1 42 388.5 Tm (Sitio educativo responsive en español sobre fenómenos naturales y prevención, con modo claro/oscuro y mapa interactivo) Tj ET
+BT /F1 9 Tf 0.204 0.255 0.396 rg 1 0 0 1 42 376.5 Tm (en Leaflet.) Tj ET
+BT /F2 9.6 Tf 0.051 0.071 0.149 rg 1 0 0 1 42 361.5 Tm (Rueda Libre  |  HTML5, CSS3, Bootstrap 5, JavaScript) Tj ET
+BT /F1 8.5 Tf 0.271 0.341 0.529 rg 1 0 0 1 435.15 361.5 Tm (hinalador.github.io/rueda-libre) Tj ET
+BT /F1 9 Tf 0.204 0.255 0.396 rg 1 0 0 1 42 349 Tm (Sitio responsive de catálogo de flota, tarifas y reserva de bicicletas en Medellín con validación visual y modal de) Tj ET
+BT /F1 9 Tf 0.204 0.255 0.396 rg 1 0 0 1 42 337 Tm (resumen.) Tj ET
+BT /F2 9.6 Tf 0.051 0.071 0.149 rg 1 0 0 1 42 322 Tm (Habit Tracker  |  Svelte, Vite, JavaScript) Tj ET
+BT /F1 8.5 Tf 0.271 0.341 0.529 rg 1 0 0 1 417.75 322 Tm (github.com/Hinalador/Svelte_project) Tj ET
+BT /F1 9 Tf 0.204 0.255 0.396 rg 1 0 0 1 42 309.5 Tm (Aplicación reactiva para seguimiento de hábitos diarios con barra de porcentaje, alertas dinámicas y reinicio de) Tj ET
+BT /F1 9 Tf 0.204 0.255 0.396 rg 1 0 0 1 42 297.5 Tm (jornada.) Tj ET
+BT /F2 10.5 Tf 0.173 0.310 0.627 rg 1 0 0 1 42 274.5 Tm (EDUCACIÓN Y CERTIFICACIONES) Tj ET
+0.851 0.871 0.949 RG 0.8 w 42 269.5 m 570 269.5 l S
+BT /F2 9.6 Tf 0.051 0.071 0.149 rg 1 0 0 1 42 256.5 Tm (Formación en Desarrollo de Software  -  Riwi \(Medellín\)) Tj ET
+BT /F1 8.5 Tf 0.271 0.341 0.529 rg 1 0 0 1 496.05 256.5 Tm (2026 - Actualidad) Tj ET
+BT /F1 9 Tf 0.204 0.255 0.396 rg 1 0 0 1 42 244 Tm (Algoritmia, desarrollo web frontend/backend, TypeScript, Git y trabajo colaborativo.) Tj ET
+BT /F2 9.6 Tf 0.051 0.071 0.149 rg 1 0 0 1 42 229 Tm (Tecnólogo en Producción de Multimedia  -  SENA \(Regional Antioquia\)) Tj ET
+BT /F1 8.5 Tf 0.271 0.341 0.529 rg 1 0 0 1 526.5 229 Tm (Abril 2024) Tj ET
+BT /F1 9 Tf 0.204 0.255 0.396 rg 1 0 0 1 42 216.5 Tm (Título oficial y Acta de Grado \(Centro de Servicios y Gestión Empresarial\).) Tj ET
+BT /F2 9.6 Tf 0.051 0.071 0.149 rg 1 0 0 1 42 201.5 Tm (Curso de Programación Básica \(29 horas\)  -  Platzi) Tj ET
+BT /F1 8.5 Tf 0.271 0.341 0.529 rg 1 0 0 1 535.2 201.5 Tm (Dic 2024) Tj ET
+BT /F1 9 Tf 0.204 0.255 0.396 rg 1 0 0 1 42 189 Tm (Certificado verificado \(Cód. c56bcd13-7780-4031-9cf6-f05570d61ffa\).) Tj ET
+BT /F2 9.6 Tf 0.051 0.071 0.149 rg 1 0 0 1 42 174 Tm (Inglés Niveles A1, A2 y B1  -  Academia LCN Idiomas  \(+ English Dot Works, SENA\)) Tj ET
+BT /F1 8.5 Tf 0.271 0.341 0.529 rg 1 0 0 1 552.6 174 Tm (2023) Tj ET
+BT /F2 9.6 Tf 0.051 0.071 0.149 rg 1 0 0 1 42 158.5 Tm (Bachiller Académico & Media Técnica en Diseño e Integración de Multimedia) Tj ET
+BT /F1 8.5 Tf 0.271 0.341 0.529 rg 1 0 0 1 478.65 158.5 Tm (I.E. Compartir · 2021) Tj ET
+BT /F2 10.5 Tf 0.173 0.310 0.627 rg 1 0 0 1 42 136 Tm (EXPERIENCIA LABORAL PREVIA) Tj ET
+0.851 0.871 0.949 RG 0.8 w 42 131 m 570 131 l S
+BT /F2 9.6 Tf 0.051 0.071 0.149 rg 1 0 0 1 42 118 Tm (Ferro Tableros S.A.S  -  Operario de enchape de melamina y armado de muebles) Tj ET
+BT /F1 8.5 Tf 0.271 0.341 0.529 rg 1 0 0 1 487.35 118 Tm (Ene 2025 - Oct 2025) Tj ET
+BT /F2 9.6 Tf 0.051 0.071 0.149 rg 1 0 0 1 42 104.5 Tm (La Tienda del Triplex  -  Auxiliar de enchape, corte y ebanistería) Tj ET
+BT /F1 8.5 Tf 0.271 0.341 0.529 rg 1 0 0 1 487.35 104.5 Tm (Jun 2024 - Nov 2024) Tj ET
+BT /F2 9.6 Tf 0.051 0.071 0.149 rg 1 0 0 1 42 91 Tm (Interplay Papelería  -  Atención al cliente, impresiones y mantenimiento de equipos de cómputo) Tj ET
+BT /F1 8.5 Tf 0.271 0.341 0.529 rg 1 0 0 1 530.85 91 Tm (Abr - Jun) Tj ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000000348 00000 n 
+0000000450 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+7679
+%%EOF

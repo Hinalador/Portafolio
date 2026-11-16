@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="es" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Juan Manuel Acevedo Salazar · Desarrollador Web & Productor Multimedia</title>
+    <meta name="description" content="Portafolio profesional: proyectos, repositorios, formación y contacto." />
+    <meta name="theme-color" content="#090d1b" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Juan Manuel Acevedo Salazar · Portafolio" />
+    <meta property="og:description" content="Proyectos, repositorios, formación y contacto." />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Aplica tema e idioma guardados antes de pintar (evita parpadeo) -->
+    <script>
+      (function () {
+        var d = document.documentElement;
+        d.classList.add('js');
+        try {
+          if (localStorage.getItem('theme') === 'light') d.classList.remove('dark');
+          var l = localStorage.getItem('lang');
+          if (l) d.lang = l;
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+
+  <body>
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:rounded-lg focus:bg-primary focus:px-4 focus:py-2 focus:text-white"
+      data-i18n="skip"
+      >Saltar al contenido</a
+    >
+
+    <!-- ================================================================ HEADER -->
+    <header id="header" class="fixed inset-x-0 top-0 z-50 transition-[background-color,border-color,box-shadow] duration-200">
+      <div class="pointer-events-none absolute inset-x-0 top-0 h-[2px] origin-left scale-x-0 bg-linear-to-r from-french-blue-500 via-space-indigo-400 to-french-blue-300 transition-transform duration-75" data-scroll-progress aria-hidden="true"></div>
+      <nav class="container-page flex h-16 items-center justify-between gap-4" data-i18n-aria-label="nav.label">
+        <a href="#inicio" class="group flex items-center font-mono text-lg font-semibold tracking-tight" data-i18n-aria-label="nav.home">
+          <span class="text-accent transition group-hover:-translate-x-0.5">&lt;</span>
+          <span data-profile="initials" class="text-fg">JM</span>
+          <span class="text-accent transition group-hover:translate-x-0.5">/&gt;</span>
+        </a>
+
+        <ul class="hidden items-center gap-1 lg:flex">
+          <li><a href="#sobre-mi" class="nav-link" data-nav="sobre-mi" data-i18n="nav.about">Sobre mí</a></li>
+          <li><a href="#proyectos" class="nav-link" data-nav="proyectos" data-i18n="nav.projects">Proyectos</a></li>
+          <li><a href="#repositorios" class="nav-link" data-nav="repositorios" data-i18n="nav.repos">Repositorios</a></li>
+          <li><a href="#formacion" class="nav-link" data-nav="formacion" data-i18n="nav.education">Formación</a></li>
+          <li><a href="#contacto" class="nav-link" data-nav="contacto" data-i18n="nav.contact">Contacto</a></li>
+        </ul>
+
+        <div class="flex items-center gap-2">
+          <button id="lang-toggle" type="button" class="icon-btn font-mono text-xs font-semibold" data-i18n-aria-label="lang.toggle">
+            <span data-lang-label>EN</span>
+          </button>
+          <button id="theme-toggle" type="button" class="icon-btn" data-i18n-aria-label="theme.toggle">
+            <span class="hidden dark:block" data-icon="sun" data-icon-class="size-[18px]"></span>
+            <span class="block dark:hidden" data-icon="moon" data-icon-class="size-[18px]"></span>
+          </button>
+          <a href="#contacto" class="btn btn-primary hidden py-2.5 lg:inline-flex" data-i18n="nav.cta">Hablemos</a>
+          <button
+            id="menu-toggle"
+            type="button"
+            class="icon-btn lg:hidden"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            data-i18n-aria-label="menu.open"
+          >
+            <span data-menu-icon data-icon="menu" data-icon-class="size-5"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Menú móvil -->
+    <div id="mobile-menu" class="mobile-menu lg:hidden" data-open="false">
+      <nav class="container-page flex min-h-full flex-col pt-4 pb-10">
+        <ul>
+          <li><a href="#inicio" class="mobile-link" style="transition-delay: 40ms" data-nav="inicio"><span data-i18n="nav.home">Inicio</span><span class="text-muted" data-icon="arrow-up-right"></span></a></li>
+          <li><a href="#sobre-mi" class="mobile-link" style="transition-delay: 80ms" data-nav="sobre-mi"><span data-i18n="nav.about">Sobre mí</span><span class="text-muted" data-icon="arrow-up-right"></span></a></li>
+          <li><a href="#proyectos" class="mobile-link" style="transition-delay: 120ms" data-nav="proyectos"><span data-i18n="nav.projects">Proyectos</span><span class="text-muted" data-icon="arrow-up-right"></span></a></li>
+          <li><a href="#repositorios" class="mobile-link" style="transition-delay: 160ms" data-nav="repositorios"><span data-i18n="nav.repos">Repositorios</span><span class="text-muted" data-icon="arrow-up-right"></span></a></li>
+          <li><a href="#formacion" class="mobile-link" style="transition-delay: 200ms" data-nav="formacion"><span data-i18n="nav.education">Formación</span><span class="text-muted" data-icon="arrow-up-right"></span></a></li>
+          <li><a href="#contacto" class="mobile-link" style="transition-delay: 240ms" data-nav="contacto"><span data-i18n="nav.contact">Contacto</span><span class="text-muted" data-icon="arrow-up-right"></span></a></li>
+        </ul>
+        <div class="mt-auto pt-10">
+          <a data-cv-link href="./cv.pdf" download class="btn btn-primary w-full">
+            <span data-icon="download" data-icon-class="size-4"></span><span data-i18n="hero.ctaCv">Descargar CV</span>
+          </a>
+          <ul class="mt-6 flex justify-center gap-3" data-socials></ul>
+        </div>
+      </nav>
+    </div>
+
+    <main id="main">
+      <!-- ================================================================ HERO -->
+      <section id="inicio" class="relative isolate flex min-h-svh items-center overflow-hidden pt-28 pb-20 sm:pt-32">
+        <div class="hero-bg" aria-hidden="true">
+          <div class="hero-grid"></div>
+          <div class="blob blob-1"></div>
+          <div class="blob blob-2"></div>
+          <div class="blob blob-3"></div>
+          <canvas id="particles"></canvas>
+        </div>
+
+        <div class="container-page grid items-center gap-14 lg:grid-cols-[1.15fr_1fr] lg:gap-10">
+          <div class="animate-fade-up">
+            <p class="inline-flex items-center gap-2.5 rounded-full border border-line bg-surface/60 px-3.5 py-1.5 text-xs font-medium text-muted backdrop-blur sm:text-sm">
+              <span class="pulse-dot" data-available-dot></span>
+              <span data-available-text>Disponible para nuevos proyectos</span>
+            </p>
+
+            <h1 class="mt-6 font-display font-bold tracking-tight">
+              <span class="block text-lg font-medium text-muted sm:text-xl" data-i18n="hero.greeting">Hola, soy</span>
+              <span class="text-gradient mt-1 block pb-1 text-4xl leading-[1.08] text-balance sm:text-5xl lg:text-[3.5rem]" data-profile="name">Juan Manuel Acevedo Salazar</span>
+            </h1>
+
+            <p class="mt-5 min-h-[1.75em] font-mono text-lg text-accent sm:text-2xl">
+              <span class="sr-only" data-profile="role"></span>
+              <span aria-hidden="true"><span class="text-muted">&gt;</span> <span id="typing"></span><span class="animate-blink ml-0.5 inline-block h-[1.1em] w-[2px] translate-y-[0.2em] bg-accent"></span></span>
+            </p>
+
+            <p class="mt-6 max-w-xl text-base leading-relaxed text-muted text-pretty sm:text-lg" data-profile="tagline"></p>
+
+            <div class="mt-9 flex flex-col gap-3 sm:flex-row">
+              <a href="#proyectos" class="btn btn-primary group">
+                <span data-i18n="hero.ctaProjects">Ver proyectos</span>
+                <span class="transition group-hover:translate-x-1" data-icon="arrow-right" data-icon-class="size-4"></span>
+              </a>
+              <a data-cv-link href="./cv.pdf" download class="btn btn-secondary">
+                <span data-icon="download" data-icon-class="size-4"></span>
+                <span data-i18n="hero.ctaCv">Descargar CV</span>
+              </a>
+            </div>
+
+            <ul class="mt-9 flex items-center gap-3" data-socials></ul>
+          </div>
+
+          <!-- Tarjeta de código -->
+          <div class="relative mx-auto hidden w-full max-w-md animate-fade-up [animation-delay:200ms] sm:block lg:max-w-none">
+            <div class="absolute -inset-4 -z-10 rounded-[2rem] bg-linear-to-br from-french-blue-500/25 via-space-indigo-500/10 to-transparent blur-2xl"></div>
+            <div class="overflow-hidden rounded-2xl border border-smart-blue-700/60 bg-space-indigo-900/90 shadow-2xl shadow-space-indigo-950/40 backdrop-blur">
+              <div class="flex items-center gap-2 border-b border-smart-blue-800 px-4 py-3">
+                <span class="size-3 rounded-full bg-smart-blue-700"></span>
+                <span class="size-3 rounded-full bg-smart-blue-700"></span>
+                <span class="size-3 rounded-full bg-smart-blue-700"></span>
+                <span class="ml-3 font-mono text-xs text-smart-blue-400">developer.js</span>
+              </div>
+              <pre class="overflow-x-auto p-5 font-mono text-[0.8rem] leading-relaxed text-smart-blue-100 sm:text-sm"><code data-code></code></pre>
+            </div>
+
+            <div class="animate-float absolute -top-5 -right-3 flex items-center gap-2 rounded-xl border border-line bg-surface/90 px-3 py-2 text-xs font-semibold shadow-xl backdrop-blur lg:-right-6">
+              <span class="grid size-7 place-items-center rounded-lg bg-primary/15 text-accent" data-icon="layers" data-icon-class="size-4"></span>
+              <span data-i18n="hero.badge1">Front & Back</span>
+            </div>
+            <div class="animate-float absolute -bottom-5 right-4 flex items-center gap-2 rounded-xl border border-line bg-surface/90 px-3 py-2 text-xs font-semibold shadow-xl backdrop-blur [animation-delay:-3.5s] lg:-right-5">
+              <span class="grid size-7 place-items-center rounded-lg bg-primary/15 text-accent" data-icon="sparkles" data-icon-class="size-4"></span>
+              <span data-i18n="hero.badge2">Código limpio</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="#sobre-mi" class="absolute bottom-6 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 text-xs text-muted transition hover:text-fg sm:flex" aria-label="Scroll">
+          <span class="scroll-mouse flex h-9 w-6 justify-center rounded-full border-2 border-current pt-1.5"><span class="h-2 w-1 rounded-full bg-current"></span></span>
+          <span data-i18n="hero.scroll">Desliza</span>
+        </a>
+      </section>
+
+      <!-- ================================================================ SOBRE MÍ -->
+      <section id="sobre-mi" class="section">
+        <div class="container-page">
+          <div class="section-head reveal">
+            <p class="eyebrow"><span>01</span><span data-i18n="about.eyebrow">Sobre mí</span></p>
+            <h2 class="section-title" data-i18n="about.title">Construyo productos digitales de punta a punta</h2>
+          </div>
+
+          <div class="grid gap-10 lg:grid-cols-[0.85fr_1.3fr] lg:gap-14">
+            <!-- Tarjeta de perfil -->
+            <div class="reveal">
+              <div class="card relative overflow-hidden p-6 sm:p-8">
+                <div class="absolute inset-x-0 top-0 h-28 bg-linear-to-br from-french-blue-600/40 via-space-indigo-600/25 to-transparent"></div>
+                <div class="relative">
+                  <div class="relative mx-auto size-36 sm:size-40 lg:mx-0">
+                    <div class="absolute -inset-1 rounded-full bg-linear-to-tr from-french-blue-500 via-space-indigo-400 to-smart-blue-300 opacity-80"></div>
+                    <div class="relative size-full overflow-hidden rounded-full border-4 border-surface bg-space-indigo-800" data-avatar></div>
+                  </div>
+                  <div class="mt-6 text-center lg:text-left">
+                    <h3 class="font-display text-2xl font-bold" data-profile="name">Juan Manuel Acevedo Salazar</h3>
+                    <p class="mt-1 text-accent" data-profile="role"></p>
+                  </div>
+                  <ul class="mt-6 space-y-3 border-t border-line pt-6 text-sm text-muted">
+                    <li class="flex items-center gap-3">
+                      <span class="text-accent" data-icon="pin" data-icon-class="size-4"></span><span data-profile="location"></span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                      <span class="text-accent" data-icon="mail" data-icon-class="size-4"></span>
+                      <a data-email-link class="truncate transition hover:text-fg" href="#"></a>
+                    </li>
+                    <li class="flex items-center gap-3">
+                      <span class="text-accent" data-icon="phone" data-icon-class="size-4"></span>
+                      <a data-phone-link class="truncate transition hover:text-fg" href="#"></a>
+                    </li>
+                    <li class="flex items-center gap-3">
+                      <span class="pulse-dot ml-1 mr-1" data-available-dot></span><span data-available-text></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="reveal [--delay:120ms]">
+              <div class="space-y-5 text-base leading-relaxed text-muted text-pretty sm:text-lg" data-about></div>
+              <dl class="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-4" data-stats></dl>
+            </div>
+          </div>
+
+          <div class="mt-16 sm:mt-20">
+            <div class="reveal flex flex-col gap-1 sm:flex-row sm:items-end sm:justify-between">
+              <h3 class="font-display text-2xl font-bold" data-i18n="about.stackTitle">Stack tecnológico</h3>
+              <p class="text-sm text-muted" data-i18n="about.stackSub"></p>
+            </div>
+            <div class="mt-6 grid gap-4 md:grid-cols-3" data-stack></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================ PROYECTOS -->
+      <section id="proyectos" class="section">
+        <div class="container-page">
+          <div class="section-head reveal">
+            <p class="eyebrow"><span>02</span><span data-i18n="projects.eyebrow">Proyectos</span></p>
+            <h2 class="section-title" data-i18n="projects.title">Trabajo destacado</h2>
+            <p class="section-sub" data-i18n="projects.subtitle"></p>
+          </div>
+
+          <div
+            class="no-scrollbar reveal -mx-5 flex gap-2 overflow-x-auto px-5 pb-2 sm:mx-0 sm:flex-wrap sm:px-0"
+            role="toolbar"
+            data-i18n-aria-label="projects.filterLabel"
+            data-filters
+          ></div>
+
+          <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3" data-projects></div>
+          <p class="mt-8 hidden rounded-2xl border border-dashed border-line p-8 text-center text-muted" data-projects-empty data-i18n="projects.empty"></p>
+        </div>
+      </section>
+
+      <!-- ================================================================ REPOSITORIOS -->
+      <section id="repositorios" class="section border-y border-line/60 bg-surface/30">
+        <div class="container-page">
+          <div class="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+            <div class="section-head reveal mb-0 sm:mb-0">
+              <p class="eyebrow"><span>03</span><span data-i18n="repos.eyebrow">Código abierto</span></p>
+              <h2 class="section-title" data-i18n="repos.title">Repositorios de GitHub</h2>
+              <p class="section-sub" data-i18n="repos.subtitle"></p>
+            </div>
+            <div class="reveal [--delay:100ms]" data-gh-profile></div>
+          </div>
+
+          <div class="reveal mt-10 grid gap-3 sm:grid-cols-[1fr_auto_auto]">
+            <label class="relative block">
+              <span class="sr-only" data-i18n="repos.search"></span>
+              <span class="pointer-events-none absolute top-1/2 left-4 -translate-y-1/2 text-muted" data-icon="search" data-icon-class="size-4"></span>
+              <input type="search" class="input pl-11" data-repo-search data-i18n-placeholder="repos.search" autocomplete="off" />
+            </label>
+            <select class="input cursor-pointer sm:w-auto" data-repo-lang aria-label="Language"></select>
+            <select class="input cursor-pointer sm:w-auto" data-repo-sort aria-label="Sort">
+              <option value="updated" data-i18n="repos.sortUpdated">Más recientes</option>
+              <option value="stars" data-i18n="repos.sortStars">Más estrellas</option>
+            </select>
+          </div>
+
+          <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3" data-repos aria-live="polite"></div>
+
+          <div class="mt-10 flex flex-col items-center gap-3">
+            <p class="font-mono text-xs text-muted" data-repos-count></p>
+            <button type="button" class="btn btn-secondary hidden" data-repos-more>
+              <span data-i18n="repos.more">Cargar más</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================ FORMACIÓN -->
+      <section id="formacion" class="section">
+        <div class="container-page">
+          <div class="section-head reveal">
+            <p class="eyebrow"><span>04</span><span data-i18n="edu.eyebrow">Formación</span></p>
+            <h2 class="section-title" data-i18n="edu.title">Educación y certificaciones</h2>
+          </div>
+
+          <div class="grid gap-14 lg:grid-cols-2 lg:gap-12">
+            <div>
+              <h3 class="reveal flex items-center gap-3 font-display text-xl font-semibold">
+                <span class="grid size-10 place-items-center rounded-xl bg-primary/15 text-accent" data-icon="cap"></span>
+                <span data-i18n="edu.education">Educación</span>
+              </h3>
+              <ol class="relative mt-8 ml-5 space-y-10 border-l border-line" data-education></ol>
+            </div>
+            <div>
+              <h3 class="reveal flex items-center gap-3 font-display text-xl font-semibold">
+                <span class="grid size-10 place-items-center rounded-xl bg-primary/15 text-accent" data-icon="award"></span>
+                <span data-i18n="edu.certs">Certificaciones</span>
+              </h3>
+              <ul class="mt-8 grid gap-4" data-certs></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================ CONTACTO -->
+      <section id="contacto" class="section pt-8 sm:pt-12">
+        <div class="container-page">
+          <div class="card reveal relative overflow-hidden p-6 sm:p-10 lg:p-14">
+            <div class="pointer-events-none absolute -top-32 -right-32 size-80 rounded-full bg-french-blue-500/20 blur-3xl"></div>
+            <div class="pointer-events-none absolute -bottom-32 -left-32 size-80 rounded-full bg-space-indigo-500/15 blur-3xl"></div>
+
+            <div class="relative grid gap-12 lg:grid-cols-[1fr_1.2fr] lg:gap-16">
+              <div>
+                <p class="eyebrow"><span>05</span><span data-i18n="contact.eyebrow">Contacto</span></p>
+                <h2 class="section-title" data-i18n="contact.title">¿Tienes un proyecto en mente?</h2>
+                <p class="section-sub" data-i18n="contact.text"></p>
+
+                <div class="mt-8 space-y-3">
+                  <div class="flex items-center gap-4 rounded-2xl border border-line bg-bg/40 p-4">
+                    <span class="grid size-11 shrink-0 place-items-center rounded-xl bg-primary/15 text-accent" data-icon="mail"></span>
+                    <div class="min-w-0 flex-1">
+                      <p class="text-xs text-muted" data-i18n="contact.emailLabel">Correo</p>
+                      <a data-email-link href="#" class="block truncate font-medium transition hover:text-accent"></a>
+                    </div>
+                    <button type="button" class="icon-btn" data-copy-email data-i18n-aria-label="contact.copy" data-i18n-title="contact.copy">
+                      <span data-icon="copy" data-icon-class="size-4"></span>
+                    </button>
+                  </div>
+                  <div class="flex items-center gap-4 rounded-2xl border border-line bg-bg/40 p-4">
+                    <span class="grid size-11 shrink-0 place-items-center rounded-xl bg-primary/15 text-accent" data-icon="phone"></span>
+                    <div class="min-w-0 flex-1">
+                      <p class="text-xs text-muted" data-i18n="contact.phoneLabel">Teléfono / WhatsApp</p>
+                      <a data-phone-link href="#" class="block truncate font-medium transition hover:text-accent"></a>
+                    </div>
+                    <button type="button" class="icon-btn" data-copy-phone data-i18n-aria-label="contact.copyPhone" data-i18n-title="contact.copyPhone">
+                      <span data-icon="copy" data-icon-class="size-4"></span>
+                    </button>
+                  </div>
+                  <div class="flex items-center gap-4 rounded-2xl border border-line bg-bg/40 p-4">
+                    <span class="grid size-11 shrink-0 place-items-center rounded-xl bg-primary/15 text-accent" data-icon="pin"></span>
+                    <div>
+                      <p class="text-xs text-muted" data-i18n="contact.locationLabel">Ubicación</p>
+                      <p class="font-medium" data-profile="location"></p>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="mt-8 text-sm text-muted" data-i18n="contact.social"></p>
+                <ul class="mt-3 flex gap-3" data-socials></ul>
+              </div>
+
+              <form class="grid self-start gap-1 sm:grid-cols-2 sm:gap-x-4" data-contact-form novalidate>
+                <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true" />
+                <div>
+                  <label for="f-name" class="label" data-i18n="contact.name">Nombre</label>
+                  <input id="f-name" name="name" type="text" class="input" autocomplete="name" required data-i18n-placeholder="contact.namePh" aria-describedby="e-name" />
+                  <p id="e-name" class="field-error" data-error-for="name"></p>
+                </div>
+                <div>
+                  <label for="f-email" class="label" data-i18n="contact.email">Correo electrónico</label>
+                  <input id="f-email" name="email" type="email" class="input" autocomplete="email" required data-i18n-placeholder="contact.emailPh" aria-describedby="e-email" />
+                  <p id="e-email" class="field-error" data-error-for="email"></p>
+                </div>
+                <div class="sm:col-span-2">
+                  <label for="f-subject" class="label" data-i18n="contact.subject">Asunto</label>
+                  <input id="f-subject" name="subject" type="text" class="input" data-i18n-placeholder="contact.subjectPh" />
+                  <p class="field-error"></p>
+                </div>
+                <div class="sm:col-span-2">
+                  <label for="f-message" class="label" data-i18n="contact.message">Mensaje</label>
+                  <textarea id="f-message" name="message" rows="5" class="input resize-y" required data-i18n-placeholder="contact.messagePh" aria-describedby="e-message"></textarea>
+                  <p id="e-message" class="field-error" data-error-for="message"></p>
+                </div>
+                <div class="sm:col-span-2">
+                  <button type="submit" class="btn btn-primary w-full sm:w-auto" data-submit>
+                    <span data-submit-label data-i18n="contact.send">Enviar mensaje</span>
+                    <span data-icon="send" data-icon-class="size-4"></span>
+                  </button>
+                  <p class="mt-4 hidden items-start gap-2 rounded-xl border px-4 py-3 text-sm" role="status" data-form-status></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================================================================ FOOTER -->
+    <footer class="border-t border-line/60">
+      <div class="container-page flex flex-col items-center gap-6 py-10 text-center text-sm text-muted md:flex-row md:justify-between md:text-left">
+        <div>
+          <p>© <span data-year></span> <span data-profile="name"></span>. <span data-i18n="footer.rights"></span></p>
+          <p class="mt-1 text-xs" data-i18n="footer.built"></p>
+        </div>
+        <ul class="flex gap-3" data-socials></ul>
+      </div>
+    </footer>
+
+    <!-- Botón volver arriba -->
+    <a
+      href="#inicio"
+      class="fixed right-5 bottom-5 z-40 grid size-12 translate-y-4 place-items-center rounded-full bg-primary text-white opacity-0 shadow-xl shadow-primary/30 transition duration-300 pointer-events-none hover:-translate-y-1 hover:bg-primary-hover data-[show=true]:pointer-events-auto data-[show=true]:translate-y-0 data-[show=true]:opacity-100"
+      data-back-to-top
+      data-i18n-aria-label="footer.top"
+    >
+      <span data-icon="arrow-up"></span>
+    </a>
+
+    <!-- Toast -->
+    <div
+      class="pointer-events-none fixed inset-x-0 bottom-6 z-[60] flex justify-center px-5 opacity-0 transition duration-300 data-[show=true]:opacity-100"
+      role="status"
+      aria-live="polite"
+      data-toast
+    >
+      <p class="flex items-center gap-2 rounded-xl border border-line bg-surface px-4 py-3 text-sm font-medium shadow-2xl">
+        <span class="text-emerald-400" data-icon="check-circle" data-icon-class="size-4"></span>
+        <span data-toast-text></span>
+      </p>
+    </div>
+
+    <!-- Modal de proyecto -->
+    <dialog class="modal" aria-labelledby="modal-title" data-project-modal>
+      <div class="modal-panel">
+        <div class="relative" data-modal-content></div>
+      </div>
+    </dialog>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
